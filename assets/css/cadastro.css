@@ -1,0 +1,391 @@
+/* Importação das fontes utilizadas */
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&família=Sarala:wght@400;700&display=swap');
+
+/* Importação do reset da página */
+
+@import "../css/reset.css";
+
+/* Estilização do background da e aplicação geral das fontes desejadas */
+
+body {
+    font-family: 'Righteous', 'sarala';
+    background: linear-gradient(68.15deg, #adfafa 16.62%,#2b82a1  85.61%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Texto de informação para a realização do cadastro */
+
+.info {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 50px;
+    font-weight: bold;
+    color: #103D4A;
+}
+
+/* Configuração para o posicionamento do grid de cadastro no centro da página */
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    width: 100%;
+}
+
+/* Estilização do grid de cadastro, configuração da cor e tamanho do grid */
+
+.card-cadastrar {
+    background-color: rgba(255, 255, 255, 0.87);
+    padding: 40px;
+    border-radius: 15px;
+    width: 450px;
+    box-shadow: 10px 10px 34px rgba(0, 0, 0, 0.95);
+}
+
+/* Estilização e posicionamento do titulo de dentro do grid, tamanho de fonte, cor e espaçamento */
+
+.titulo {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #103D4A;
+    font-weight: bold;
+}
+
+/* Posicionamento e estilização da mensagem de erro que aparece dentro do grid, tamanho da fonte, cor da fonte, cor de fundo e espaçamento e centralização */
+
+.mensagem-erro {
+    text-align: center;
+    color: rgb(211, 58, 58);
+    background-color: #ffe1e9;
+    padding: 10px;
+    border-radius: 6px;
+    display: none;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+/* Posicionamento e estilização da mensagem de sucesso que aparece dentro do grid, tamanho da fonte, cor da fonte, cor de fundo e espaçamento e centralização */
+
+.mensagem-sucesso {
+    text-align: center;
+    color: #1c7068;
+    background-color: rgb(183, 252, 252);
+    padding: 10px;
+    border-radius: 6px;
+    display: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.label-float input {
+    width: 100%;
+    padding: 5px 5px; 
+    display: inline-block;
+    border: 0;
+    border-bottom: 2px solid rgb(77, 199, 199);
+    background-color: transparent;
+    outline: none;
+    min-width: 180px;
+    font-size: 12px;
+    transition: all .3s ease-out;
+    border-radius: 0;
+}
+
+.label-float {
+    position: relative;
+    padding-top: 10px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-top: 20px;
+}
+
+.icones-login {
+    font-size: 12px;
+    padding-right: 5px;
+}
+
+.label-float input:focus {
+   border-bottom: 2px solid rgb(211, 58, 58);
+   transition: all 1.5s;
+}
+
+.label-float label {
+    color: #103D4A;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 13px;
+    transition: all .3s ease-out;
+    font-size: 11px;
+}
+
+.label-float input:focus + label,
+.label-float input:valid + label {
+    font-size: 8px;
+    margin-top: 0;
+    color: rgb(211, 58, 58);
+}
+
+/* Posicionamento e estilização da opção de ver a senha */
+
+.fa-eye-slash {
+    position: absolute;
+    top: 15px;
+    right: -10px;
+    cursor: pointer;
+    color: rgb(35, 129, 129);
+}
+
+/* Posiciona o botão "Cadastrar", a linha abaixo do "Cadastrar" e também e também os botões "Sim" e "Não" do modal */
+
+.justify-center {
+    display: flex;
+    justify-content: center;
+}
+
+/* Posicionamento e estilização do botão "Cadastrar", cor do botão, tamanho da fonte, estilização da fonte  */
+
+.cadastrar {
+    background-color: rgb(61, 174, 174);
+    padding: 8px;
+    font-size: 12px;
+    font-weight: bold;
+    width: 50%;
+    border-radius: 5px;
+    border:none;
+    color:rgb(255, 255, 255);
+    margin-top: 15px;
+    cursor: pointer;
+    outline: none;
+}
+
+/* Estilização ao passar o mouse em cima do botão "Cadastrar", cor do botão e transição */
+
+.cadastrar:hover {
+    background-color: rgb(36, 120, 125);
+    transition: 1s;
+}
+
+/* Posicionamento e estilização da linha abaixo do botão "Cadastrar", cor e tamanho da linha */
+
+.linha-cadastrar {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 70%;
+    border-bottom: 2px solid #2a90b6;
+}
+
+/* Posicionamento e estilização do direcionamento para a página de login, cor e centralização do texto */
+
+.direciona-login {
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    color: #103D4A;
+    font-size: 18px;
+}
+
+/* Estilização do link de acesso a página de login, cor e tamanho da fonte */
+
+.link-login {
+    text-decoration: none;
+    color: rgb(61, 174, 174);
+    padding-left: 5px;
+    font-size: 20px;
+    transition: all .5s;
+}
+
+/* Estilização do link de acesso a página de login, ao passar o mouse realizando a alteração da cor */
+
+.link-login:hover {
+    color:rgb(211, 58, 58)
+}
+
+
+
+
+
+/* Posicionamento do modal que aparece na tela pedindo se deseja ir para a tela de login ou não */
+
+.modal-login {
+    display: none;
+    justify-content: center;
+    z-index: 100;
+    position: relative;
+    border-top: 220px solid #205c5c00;
+    border-bottom: 220px solid #205c5c00;
+    margin-top: -600px;
+    right: 0px;
+}
+
+/* Estilização do modal que aparece na tela pedindo se deseja ir para a tela de login ou não, cor e tamanho  */
+
+.card-login {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 34px rgba(0, 0, 0, 0.95);
+    width: 195px;
+}
+
+/* Posicionamento e estilização titulo do "modal-login", cor, tamanho e centralização */
+
+.titulo-modal-login {
+    display: flex;
+    justify-content: center;    
+    padding-top: 15px;
+    font-size: 14px;
+    color: #103D4A;
+}
+
+/* Estilização e posicionamento dos botões "Sim" e "Não" do "modal-login", cor dos botões, cor e tamanho das fontes  */
+
+.botoes-modal-login {
+    margin: 10px;
+    background-color: rgb(61, 174, 174);
+    padding: 8px;
+    font-size: 12px;
+    font-weight: bold;
+    width: 50%;
+    border-radius: 5px;
+    border:none;
+    color:rgb(255, 255, 255);
+    margin-top: 50px;
+    cursor: pointer;
+    outline: none;
+}
+
+/* Estilização dos botões do "modal-login" ao passar o mouse por cima */
+
+.botoes-modal-login:hover {
+    background-color: rgb(36, 120, 125);
+    transition: 1s;
+}
+
+@media screen and (min-width: 768px) {  
+
+
+    /* Texto de informação para a realização do cadastro */
+
+    .info {
+        font-size: 35px;
+        margin-top: 40px;
+    }
+
+    /* Configuração para o posicionamento do grid de cadastro no centro da página */
+
+    .container {
+        margin-top: 60px;
+    }
+
+    /* Estilização do grid de cadastro, configuração da cor e tamanho do grid */
+
+    .card-cadastrar {
+        padding: 60px;
+    }
+
+    /* Estilização e posicionamento do titulo de dentro do grid, tamanho de fonte, cor e espaçamento */
+
+    .titulo {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    /* Posicionamento e estilização da mensagem de erro que aparece dentro do grid, tamanho da fonte, cor da fonte, cor de fundo e espaçamento e centralização */
+
+    .mensagem-erro {
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    /* Posicionamento e estilização da mensagem de sucesso que aparece dentro do grid, tamanho da fonte, cor da fonte, cor de fundo e espaçamento e centralização */
+
+    .mensagem-sucesso {
+        padding: 15px;
+        border-radius: 6px;
+        font-size: 20px;
+    }
+
+    .label-float input {
+        border-bottom: 3px solid rgb(77, 199, 199);
+        font-size: 16px;
+    }
+
+    .label-float {
+        padding-top: 13px;
+        margin-top: 5%;
+    }
+
+    .icones-login {
+        font-size: 18px;
+        padding-right: 5px;
+    }
+
+    .label-float label {
+        font-size: 16px;
+    }
+
+    .label-float input:focus + label,
+    .label-float input:valid + label {
+        font-size: 13px;
+    }
+
+    /* Posicionamento e estilização do botão "Cadastrar", cor do botão, tamanho da fonte, estilização da fonte  */
+
+    .cadastrar {
+        font-size: 14px;
+        width: 40%;
+        margin-top: 30px;
+    }
+
+    /* Posicionamento e estilização da linha abaixo do botão "Cadastrar", cor e tamanho da linha */
+
+    .linha-cadastrar {
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    /* Posicionamento e estilização do direcionamento para a página de login, cor e centralização do texto */
+
+    .direciona-login {
+        margin-top: 30px;
+    }
+
+
+
+
+
+    /* Posicionamento do modal que aparece na tela pedindo se deseja ir para a tela de login ou não */
+
+    .modal-login {
+        margin-top: -680px;
+    }
+
+    /* Estilização do modal que aparece na tela pedindo se deseja ir para a tela de login ou não, cor e tamanho  */
+
+    .card-login {
+        padding: 30px 40px 30px 40px;
+        width: 295px;
+    }
+
+    /* Posicionamento e estilização titulo do "modal-login", cor, tamanho e centralização */
+
+    .titulo-modal-login {   
+        font-size: 18px;
+    }
+
+    /* Estilização e posicionamento dos botões "Sim" e "Não" do "modal-login", cor dos botões, cor e tamanho das fontes  */
+
+    .botoes-modal-login {
+        margin: 15px;
+        font-size: 18px;
+        width: 40%;
+    }
+}

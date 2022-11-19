@@ -1,0 +1,346 @@
+body {
+    font-family: 'Open Sans', 'icones', sans-serif;
+}
+
+/* Estilo do menu principal */
+
+.cabecalho {
+    justify-content: space-between;
+    display: flex;
+    min-width: 280px;
+    align-items: center;
+    background-color: var(--borda-cabecalho-mobile);
+    border-bottom-right-radius: 25px;
+    padding: 8px 0;
+}
+
+/* Icone do menu lateral */
+
+.icone-menu-lateral {
+    color: white;
+    font-size: 20px;
+    padding-left: 5px;
+}
+
+/* Logo do menu principal */
+
+.logo-menu {
+    width: 85px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin: 2px 0px 2px 0px;
+}
+
+/* Menu lateral para o modo mobile */
+
+.menu-lateral {
+    background-color: var(--cor-primaria);
+    display: flex;
+    flex-direction: column;
+    min-width: 105px;
+    max-width: 105px;
+    border-bottom-right-radius: 20px;
+    position: absolute;
+    left: -100vw;
+    transition: .5s;
+    border: 1px solid var(--borda-cabecalho-mobil);
+    box-shadow: 10px 10px 34px rgba(0, 0, 0, 0.95);
+    top: 50px;
+    padding: 3px;
+}
+
+/* Posicionamento do menu-lateral ao clicar no icone do menu lateral no menu principal */
+
+.menu-lateral-click {
+    left: 0;
+    transition: 1s;
+}
+
+/* Posicionamento das opções que são apresentadas no menu lateral para poder acessar o submenu */
+
+.opcoes-posicionamento-submenu {
+    position: relative;
+}
+
+/* Estilização das opções do menu lateral que dão acesso ao submenu */
+
+.opcoes-menu-lateral {
+    font-family: 'Sarala', sans-serif;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    font-family: arial;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: rgb(0, 0, 0);
+    padding: 8px 10px;
+    height: 20px;
+    font-weight: bold;
+}
+
+/* Estilização ao passar o mouse nas opções do menu lateral */
+
+.opcoes-menu-lateral:hover {
+    background-color: var(--borda-cabecalho-mobile);
+    color: var(--cor-primaria);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 20px;
+}
+
+/* Icones das opções do menu lateral */
+
+.icones-menu {
+    font-size: 12px;
+    padding-right: 2px;
+}
+
+/* Simbolo das opções do menu lateral */
+
+span {
+    position: absolute;
+    right: 8px;
+    font-size: 1.5em;
+}
+
+/* Posicionamento e estilização do submenu */
+
+.sub-menu {
+    background-color: var(--cor-primaria);
+    position: absolute;
+    left: 105px;
+    width: 170px;
+    top: 0;
+    display: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 10px 10px 34px rgba(0, 0, 0, 0.95);
+    padding: 5px;
+}
+
+/* Estilização das opções do submenu */
+
+.opcoes-submenu {
+    font-family: 'Sarala', sans-serif;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    font-family: arial;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: rgb(0, 0, 0);
+    padding: 8px 10px;
+    height: 20px;
+    font-weight: bold;
+}
+
+/* Estilização ao passar o mouse nas opções do submenu */
+
+.opcoes-submenu:hover {
+    background-color: var(--borda-cabecalho-mobile);
+    border-bottom-right-radius: 20px;    
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: var(--cor-primaria);
+}
+
+/* Icones das opções do submenu */
+
+.icones-sub-menu {
+    font-size: 12px;
+    padding-left: 5px;
+}
+
+/* Aplicação para mostrar o submenu */
+
+.opcoes-posicionamento-submenu:hover .sub-menu {
+    display: initial;
+}
+
+/* Menu do usuario */
+
+.menu-usuario {
+    align-items: center;
+    display: flex;
+    position: relative;
+    padding: 5px;
+}
+
+/* Estilização do usuario do menu principal */
+
+.usuario-conectado {
+    display: flex;
+    margin: 0px 25px 0px 0px;
+    text-decoration: none;
+}
+
+/* Icone da informação do usuário no menu principal */
+
+.icone-usuario-menu {
+    color: #ffffff;
+    font-size: 25px;
+    margin-right: 5px;
+}
+
+/* Nome do usuário no menu principal */
+
+.usuario {
+    display: flex;
+    font-size: 8px;
+    color: #f7f7f7;
+    align-items: center;
+    font-weight: bold;
+}
+
+/* Submenu do usuário, menu principal */
+
+.sub-menu-usuario {
+    background-color: var(--cor-primaria);
+    position: absolute;
+    top: -200px;
+    left: -5px;
+    width: 140px;
+    flex-direction: column;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 32px;
+    box-shadow: 10px 10px 34px rgba(0, 0, 0, 0.95);
+    z-index: 100;
+    padding: 5px;
+}
+
+/* Opções do submenu do usuário do menu principal */
+
+.opcoes-submenu-usuario {
+    font-family: 'Sarala', sans-serif;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    font-family: arial;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: rgb(0, 0, 0);
+    padding: 4px 10px;
+    height: 20px;
+}
+
+/* Deixa a opção Sair do sistema em negrito */
+
+.negrito-sair {
+    font-weight: bold;
+}
+
+/* Posicionamento do submenu ao clicar no usuário */
+
+.sub-menu-usuario-click {
+    top: 35px;
+}
+
+/* Estilização e posicionamento do aviso na tela principal */
+
+.titulo-main {
+    justify-content: center;
+    display: flex;
+    position: relative;
+    top: 200px;
+    font-size: 25px;
+    color: var(--borda-cabecalho-mobile);
+    font-family: sans-serif;
+    font-weight: bold;
+    z-index: -100;
+}
+
+@media screen and (min-width: 1024px) {   
+
+
+    /* Icone do menu lateral */
+
+    .icone-menu-lateral {
+        display: none;
+    }
+
+    /* Logo do menu principal */
+
+    .logo-menu {
+        width: 160px;
+        margin-left: 10px;
+        display: flex;
+    }
+
+    /* Menu lateral para o modo mobile */
+
+    .menu-lateral {
+        background-color: transparent;
+        border-bottom-right-radius: 0;
+        flex-direction: row;
+        border: none;
+        box-shadow: none;
+        left: 180px;
+        top: 15px;
+    }
+
+    /* Estilização das opções do menu lateral que dão acesso ao submenu */
+
+    .opcoes-menu-lateral {
+        font-size: 16px;
+        color: rgb(255, 255, 255);
+    }
+
+    /* Simbolo das opções do menu lateral */
+
+    span {
+        display: none;
+    }
+
+    /* Posicionamento e estilização do submenu */
+
+    .sub-menu {
+        left: 0px;
+        width: 245px;
+        top: 36px;
+    }
+
+    /* Menu do usuario */
+
+    .menu-usuario {
+        align-items: none;
+    }
+
+    /* Estilização do usuario do menu principal */
+
+    .usuario-conectado {
+        top: 50px;
+    }
+
+    /* Estilo da informação do usuário */
+
+    .icone-usuario-menu {
+        font-size: 40px;
+    }
+    
+    /* Nome do usuário no menu principal */
+
+    .usuario {
+        font-size: 15px;
+    }
+
+    /* Submenu do usuário, menu principal */
+
+    .sub-menu-usuario {
+        width: 200px;
+        left: 10px;
+    }
+    
+    /* Posicionamento do submenu ao clicar no usuário */
+
+    .sub-menu-usuario-click {
+        top: 45px;
+    }
+
+    /* Estilização e posicionamento do aviso na tela principal */
+
+    .titulo-main {
+        font-size: 40px;
+    }
+}

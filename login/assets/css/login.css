@@ -1,0 +1,173 @@
+/* Importação das fontes utilizadas */
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&família=Sarala:wght@400;700&display=swap');
+
+/* Importação do reset da página */
+
+@import "../css/reset.css";
+
+/* Estilização do background da e aplicação geral das fontes desejadas */
+
+body {
+    font-family: 'Righteous', 'sarala';
+    background: linear-gradient(68.15deg, #adfafa 16.62%,#2b82a1  85.61%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    width: 100%;
+}
+
+.card-login {
+    background-color: rgba(255, 255, 255, 0.87);
+    padding: 40px;
+    border-radius: 15px;
+    width: 450px;
+    box-shadow: 10px 10px 34px rgba(0, 0, 0, 0.95);
+}
+
+.titulo {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #103D4A;
+    font-weight: bold;
+}
+
+.label-float input {
+    width: 100%;
+    padding: 5px 5px; 
+    display: inline-block;
+    border: 0;
+    border-bottom: 2px solid #2a90b6;
+    background-color: transparent;
+    outline: none;
+    min-width: 180px;
+    font-size: 18px;
+    transition: all .3s ease-out;
+    border-radius: 0;
+}
+
+.label-float {
+    font-size: 12px;
+    position: relative;
+    padding-top: 20px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-top: 20px;
+}
+
+.label-float input:focus {
+    border-bottom: 2px solid rgb(211, 58, 58);
+    transition: all 1.5s;
+}
+
+.label-float label {
+    color: #103D4A;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 13px;
+    transition: all .3s ease-out;
+}
+
+.label-float input:focus + label,
+.label-float input:valid + label {
+    font-size: 10px;
+    margin-top: 0;
+    color: rgb(211, 58, 58);
+}
+
+.acessar {
+    background-color: rgb(61, 174, 174);
+    padding: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    width: 50%;
+    border-radius: 5px;
+    border:none;
+    color:rgb(255, 255, 255);
+    margin-top: 35px;
+    cursor: pointer;
+    outline: none;
+}
+
+.acessar:hover {
+    background-color: rgb(36, 120, 125);
+    transition: 1s;
+}
+
+.justify-center {
+    display: flex;
+    justify-content: center;
+}
+
+.linha-acessar {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 70%;
+    border-bottom: 2px solid #2a90b6;
+}
+
+.direciona-cadastro {
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    color: #103D4A;
+    font-size: 18px;
+}
+
+.link-cadastro {
+    text-decoration: none;
+    color: rgb(61, 174, 174);
+    padding-left: 5px;
+    font-size: 20px;
+    transition: all .5s;
+}
+
+.link-cadastro:hover {
+    color:rgb(211, 58, 58)
+}
+
+.fa-eye-slash {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    cursor: pointer;
+    color: rgb(35, 129, 129);
+}
+
+.msg-error {
+    text-align: center;
+    color: rgb(211, 58, 58);
+    background-color: #ffe1e9;
+    padding: 10px;
+    border-radius: 6px;
+    display: none;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.msg-access {
+    text-align: center;
+    color: #1c7068;
+    background-color: rgb(183, 252, 252);
+    padding: 10px;
+    border-radius: 6px;
+    display: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.icones-login {
+    font-size: 20px;
+    padding-right: 5px;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/login.css">
+    <link rel="icon" type="image/png" href="assets/img/LogoDePáginas.png">
+    <title>Tela de login</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card-login">
+            <h1 class="titulo">Login</h1>
+            <div id="msgError" class="msg-error"></div>
+            <div id="msgError2" class="msg-error"></div>
+            <div id="msgAccess" class="msg-access"></div>
+            <div class="label-float">
+                <input id="usuario" type="text" placeholder="" required>
+                <label id="userLabel" for="usuario"><i class="icones-login fa fa-user"></i>Usuario</label>
+            </div>
+            <div class="label-float">
+                <input id="senha" type="password" placeholder="" required>
+                <label id="senhaLabel" for="senha"><i class="icones-login fa fa-lock"></i>Senha</label>
+                <i class="fa fa-eye-slash"></i>
+            </div>
+            <div class="justify-center">
+                <button onclick="acessar()" class="acessar">Acessar</button>
+            </div>
+            <div class="justify-center">
+                <hr class="linha-acessar">
+            </div>
+            <div class="direciona-cadastro">
+                <a>Não tem uma conta?</a>
+                <a class="link-cadastro" href="../cadastro.html">Criar uma</a>  
+            </div>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
