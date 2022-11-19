@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/cadastro.css">
+    <link rel="icon" type="image/png" href="assets/img/LogoDePáginas.png">
+    <title>Cadastros</title>
+</head>
+<body>
+    <main>
+        <h1 class="info">Realize o cadastro para poder acessar!</h1>
+        <div class="container">
+            <div class="card-cadastrar">
+                <h1 class="titulo">Cadastrar</h1>
+                <div id="msgError" class="mensagem-erro"></div>
+                <div id="msgSucess" class="mensagem-sucesso"></div>
+                <div class="label-float">
+                    <input id="nome" type="text" placeholder="" required>
+                    <label id="labelNome" for="nome"><i class="icones-login fa fa-address-card"></i>Nome completo</label>
+                </div>
+                <div class="label-float">
+                    <input id="usuario" type="text" placeholder="" required>
+                    <label id="labelUsuario" for="usuario"><i class="icones-login fa fa-user"></i>Usuário</label>
+                </div>
+                <div class="label-float">
+                    <input id="senha" type="password" placeholder="" required>
+                    <label id="labelSenha" for="senha"><i class="icones-login fa fa-lock"></i>Senha</label>
+                    <i id="versenha" class="fa fa-eye-slash"></i>
+                </div>
+                <div class="label-float">
+                    <input id="confirmesenha" type="password" placeholder="" required>
+                    <label id="labelConfirmesenha" for="confirmesenha"><i class="icones-login fa fa-lock"></i>Confirme Senha</label>
+                    <i id="verconfirmesenha" class="fa fa-eye-slash"></i>
+                </div>
+                <div class="justify-center">
+                    <button onclick="cadastrar()" class="cadastrar">Cadastrar</button>
+                </div>
+                <div class="justify-center">
+                    <hr class="linha-cadastrar">
+                </div>
+                <div class="direciona-login">
+                    <a>Já tem uma conta?</a>
+                    <a class="link-login" href="login/login.html">Acessar</a>  
+                </div>
+            </div>
+        </div>
+        <div class="modal-login">
+            <div class="card-login">
+                <h1 class="titulo-modal-login">Deseja realizar o login agora?</h1>
+                <div class="justify-center">
+                    <button onclick="sim()" class="botoes-modal-login">Sim</button>
+                    <button onclick="nao()" class="botoes-modal-login">Não</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="cadastro.js"></script>
+</body>
+</html>
